@@ -14,15 +14,22 @@
 
   <div class="wrapper">
     <header>
-      <h1>Social Media Dashboard</h1> 
-      <small>Followers: 23,004</small>  
-    </header>
+      <div class="top-header">
+        <h2>Social Media Dashboard</h2> 
+      <small class="total">Total Followers: 23,004</small>
+      </div> 
     <div class="toggle">
-      <small>Darkmode</small>
+      <div class="darkmode">
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="label"></label>
+          <div class="ball"></div>
+        </label>
+      </div>
     </div>
+  </header>
     <div class="container">
       <div class="sections">
-        <section>
+        <section class="facebook">
           <div class="icon">
             <img src="images/icon-facebook.svg" alt="">
             <p>@nathanf</p>  
@@ -34,7 +41,7 @@
             <h5>12 Today</h5>
           </div>
         </section>
-        <section>
+        <section class="twitter">
           <div class="icon">
             <img src="images/icon-twitter.svg" alt="">
             <p>@nathanf</p>
@@ -46,16 +53,19 @@
             <h5>99 Today</h5>
           </div> 
         </section>
-        <section>
+        <section class="instagram">
           <div class="icon">
             <img src="images/icon-instagram.svg" alt="">
             <p>@realnathanf</p>
           </div>
           <h1>11k</h1>
           <div class="followers">Followers</div>
-          <h5>1099 Today</h5> 
+          <div class="today">
+            <img src="images/icon-up.svg" alt="">
+            <h5>1099 Today</h5> 
+          </div>
         </section>
-        <section>
+        <section class="youtube">
           <div class="icon">
             <img src="images/icon-youtube.svg" alt="">
             <p>Nathan F.</p>
@@ -72,109 +82,112 @@
         <div class="title">
           Overview - Today
         </div>
-        <article>
-          <div class="top">
-            <span>Page Views</span>
-            <img src="images/icon-facebook.svg" alt="">
-          </div>
-          <div class="lower">
-            <h3>87</h3>
+        <div class="articles">
+          <article>
+            <div class="top">
+              <span>Page Views</span>
+              <img src="images/icon-facebook.svg" alt="">
+            </div>
+            <div class="lower">
+              <h3>87</h3>
+              <div class="today">
+                <img src="images/icon-up.svg" alt="">
+                <h5>3%</h5>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="top">
+              <span>Likes</span>
+              <img src="images/icon-facebook.svg" alt="">
+            </div>
+            <div class="lower">
+              <h3>52</h3>
+              <div class="today">
+                <img src="images/icon-down.svg" alt="">
+                <h4>2%</h4>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="top">
+              <span>Likes</span>
+              <img src="images/icon-instagram.svg" alt="">
+            </div>
+            <div class="lower">
+              <h3>5462</h3>
+              <div class="today">
+                <img src="images/icon-up.svg" alt="">
+                <h5>2257%</h5>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="top">
+              <span>Profile Views</span>
+              <img src="images/icon-instagram.svg" alt="">
+            </div>
+            <div class="lower">
+              <h3>52k</h3>
+              <div class="today">
+                <img src="images/icon-up.svg" alt="">
+                <h5>1375%</h5>
+              </div>
+            </div> 
+          </article>
+          <article>
+            <div class="top">
+              <span>Retweets</span>
+              <img src="images/icon-twitter.svg" alt="">
+            </div>
+            <div class="lower">
+              <h3>117</h3>
             <div class="today">
               <img src="images/icon-up.svg" alt="">
-              <h5>3%</h5>
+              <h5>303%</h5>
+            </div> 
+          </div>
+          </article>
+          <article>
+            <div class="top">
+              <span>Likes</span>
+              <img src="images/icon-twitter.svg" alt="">
             </div>
-          </div>
-        </article>
-        <article>
-          <div class="top">
-            <span>Likes</span>
-            <img src="images/icon-facebook.svg" alt="">
-          </div>
-          <div class="lower">
-            <h3>52</h3>
-            <div class="today">
-              <img src="images/icon-down.svg" alt="">
-              <h4>2%</h4>
+            <div class="lower">
+              <h3>507</h3>
+              <div class="today">
+                <img src="images/icon-up.svg" alt="">
+                <h5>553%</h5>
+              </div>
             </div>
-          </div>
-        </article>
-        <article>
-          <div class="top">
-            <span>Likes</span>
-            <img src="images/icon-instagram.svg" alt="">
-          </div>
-          <div class="lower">
-            <h3>5462</h3>
-            <div class="today">
-              <img src="images/icon-up.svg" alt="">
-              <h5>2257%</h5>
+          </article>
+          <article>
+            <div class="top">
+              <span>Likes</span>
+              <img src="images/icon-facebook.svg" alt="">
             </div>
-          </div>
-        </article>
-        <article>
-          <div class="top">
-            <span>Profile Views</span>
-            <img src="images/icon-instagram.svg" alt="">
-          </div>
-          <div class="lower">
-            <h3>52k</h3>
-            <div class="today">
-              <img src="images/icon-up.svg" alt="">
-              <h5>1375%</h5>
+            <div class="lower">
+              <h3>107</h3>
+              <div class="today">
+                <img src="images/icon-down.svg" alt="">
+                <h4>19%</h4>
+              </div>
             </div>
-          </div> 
-        </article>
-        <article>
-          <div class="top">
-            <span>Retweets</span>
-            <img src="images/icon-twitter.svg" alt="">
-          </div>
-          <div class="lower"></div>
-          <h3>117</h3>
-          <div class="today">
-            <img src="images/icon-up.svg" alt="">
-            <h5>303%</h5>
-          </div> 
-        </article>
-        <article>
-          <div class="top">
-            <span>Likes</span>
-            <img src="images/icon-twitter.svg" alt="">
-          </div>
-          <div class="lower">
-            <h3>507</h3>
-            <div class="today">
-              <img src="images/icon-up.svg" alt="">
-              <h5>553%</h5>
+          </article>
+          <article>
+            <div class="top">
+              <span>Total Views</span>
+              <img src="images/icon-facebook.svg" alt="">
             </div>
-          </div>
-        </article>
-        <article>
-          <div class="top">
-            <span>Likes</span>
-            <img src="images/icon-facebook.svg" alt="">
-          </div>
-          <div class="lower">
-            <h3>107</h3>
-            <div class="today">
-              <img src="images/icon-down.svg" alt="">
-              <h4>19%</h4>
-            </div>
-          </div>
-        </article>
-        <article>
-          <div class="top">
-            <span>Total Views</span>
-            <img src="images/icon-facebook.svg" alt="">
-          </div>
-          <div class="lower">
-            <h3>1407</h3>
-            <div class="today">
-              <img src="images/icon-down.svg" alt="">
-              <h4>12%</h4>
-            </div>
-          </div> 
-        </article>
+            <div class="lower">
+              <h3>1407</h3>
+              <div class="today">
+                <img src="images/icon-down.svg" alt="">
+                <h4>12%</h4>
+              </div>
+            </div> 
+          </article>
+        </div>
       </div>
     </div>
   </div>
